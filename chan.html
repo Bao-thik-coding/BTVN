@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chan</title>
+</head>
+<body>
+    <div>
+        Nhập số:<br>
+        <input id = "so_nhap" type="number" />
+        <button type="button" onclick="kiemtraso()">Kiểm tra</button>
+    </div>
+    <script>
+        function kiemtraso(){
+            let soNhap = document.getElementById("so_nhap").value
+            let thongbao = "";
+            let sodu = soNhap % 2;
+            if(sodu ==0){
+                thongbao +=`${soNhap} Là số chẵn`;
+            } else {
+                thongbao +=`${soNhap} Là không phải số chẫn`;
+            }
+
+            alert(thongbao);
+        }
+    </script>
+</body>
